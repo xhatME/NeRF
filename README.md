@@ -103,3 +103,32 @@ In Part 2, the project explores the representation and rendering of 3D scenes us
 
 ### Summary
 Part 2 of the project pushes the boundaries of 3D scene reconstruction, demonstrating the potential of NeRF in producing photorealistic renderings from a set of 2D images. The combination of advanced neural network architectures and innovative rendering techniques enables the creation of dynamic, high-fidelity visualizations of complex environments. This segment sets a solid foundation for further exploration and practical applications in virtual reality, augmented reality, and visual effects.
+## Method
+
+[NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis](http://tancik.com/nerf)  
+ [Ben Mildenhall](https://people.eecs.berkeley.edu/~bmild/)\*<sup>1</sup>,
+ [Pratul P. Srinivasan](https://people.eecs.berkeley.edu/~pratul/)\*<sup>1</sup>,
+ [Matthew Tancik](http://tancik.com/)\*<sup>1</sup>,
+ [Jonathan T. Barron](http://jonbarron.info/)<sup>2</sup>,
+ [Ravi Ramamoorthi](http://cseweb.ucsd.edu/~ravir/)<sup>3</sup>,
+ [Ren Ng](https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html)<sup>1</sup> <br>
+ <sup>1</sup>UC Berkeley, <sup>2</sup>Google Research, <sup>3</sup>UC San Diego  
+  \*denotes equal contribution  
+  
+<img src='imgs/pipeline.jpg'/>
+
+> A neural radiance field is a simple fully connected network (weights are ~5MB) trained to reproduce input views of a single scene using a rendering loss. The network directly maps from spatial location and viewing direction (5D input) to color and opacity (4D output), acting as the "volume" so we can use volume rendering to differentiably render new views
+
+
+## Citation
+Kudos to the authors for their amazing results:
+```
+@misc{mildenhall2020nerf,
+    title={NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis},
+    author={Ben Mildenhall and Pratul P. Srinivasan and Matthew Tancik and Jonathan T. Barron and Ravi Ramamoorthi and Ren Ng},
+    year={2020},
+    eprint={2003.08934},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
