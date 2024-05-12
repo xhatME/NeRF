@@ -49,7 +49,6 @@ Part 1 of the project focuses on utilizing a neural network model to fit a 2D im
 This part of the project not only tests the efficacy of neural networks in image approximation tasks but also demonstrates the critical role of positional encoding in enhancing the model's ability to capture and recreate complex visual details. The tools and techniques developed here provide a solid foundation for advancing computer vision capabilities in both academic and practical applications.
 
 ## Part 2: Fitting a 3D Scene
-## Part 2: Fitting a 3D Scene
 ![Neural_Radience_Field_NeRF](nerf.gif)
 
 In Part 2, the project explores the representation and rendering of 3D scenes using Neural Radiance Fields (NeRF). This framework is utilized for reconstructing complex 3D environments from 2D images, offering a detailed and dynamic view synthesis.
